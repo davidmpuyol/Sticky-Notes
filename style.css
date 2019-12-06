@@ -1,0 +1,38 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    width:100vw;;
+    height:100vh;
+    max-height:100vh;
+    background:lightskyblue;
+}
+.nota{
+    position:fixed;
+    padding:10px;
+    background-color:yellow;
+    margin:20px;
+    cursor:pointer;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+}
+.titulo{
+    font-weight:bold;
+    text-align:center;
+    border-bottom:2px solid black;
+
+}
+.titulo,.nota,.fecha{
+    margin:10px;
+}
+.fecha{
+    font-size:1.5vw;
+    margin-bottom:0;
+}
+header{
+    height:10vh;
+    background-color:darkred;
+}
