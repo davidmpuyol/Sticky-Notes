@@ -1,0 +1,72 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    width:100vw;;
+    height:100vh;
+    max-height:100vh;
+    background:lightskyblue;
+}
+.nota{
+    position:fixed;
+    padding:10px;
+    background-color:yellow;
+    margin:20px;
+    cursor:pointer;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+}
+.titulo{
+    font-weight:bold;
+    text-align:center;
+    border-bottom:2px solid black;
+
+}
+.titulo,.nota,.fecha{
+    margin:10px;
+}
+.fecha{
+    font-size:1vw;
+    margin-bottom:0;
+}
+header{
+    height:10vh;
+    max-height:50px;
+    background-color:darkred;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+}
+#nuevaNota{
+    cursor:pointer;
+    padding:0;
+    margin:0;
+    color:white;
+    font-weight:bold;
+    font-size:10vh;
+    margin-left:20px;
+}
+#divNota{
+    cursor:pointer;
+    text-align:center;
+    padding:0;
+    height:60vh;
+    width:50vh;
+    min-width:200px;
+    position:absolute;
+    background-color:white;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:0.1fr 0.1fr 0.1fr 0.5fr 0.2fr;
+}
+#labelNota{
+    grid-row:1;
+}
+header p{
+    font-weight:bold;
+    color:white;
+    margin-left:10px;
+}
